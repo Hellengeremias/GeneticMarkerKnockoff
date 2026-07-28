@@ -18,7 +18,7 @@ The proposed methods are compared with existing knockoff generation approaches u
 
 simulation_study.R
 
-This script contains the code used in the simulation study, including response simulation, knockoff generation, computation of LASSO-based variable importance statistics, variable selection using the knockoff filter, and evaluation of selection performance.
+This script contains the code used in the simulation study, including response simulation, knockoff generation, variable selection using the knockoff filter, LASSO benchmark and evaluation of selection performance.
 
 real_data_analysis_HMM.R
 

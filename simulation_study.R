@@ -2,7 +2,7 @@
 # Simulation study: knockoff generators for genetic marker selection
 # ==============================================================================
 #
-# This script contains the clean simulation workflow used to compare LASSO with
+# This script contains the simulation workflow used to compare LASSO with
 # knockoff-based variable selection under different dependence structures among
 # genetic markers.
 #
@@ -13,13 +13,9 @@
 #   4. Estimate the probability models required by the proposed generators.
 #   5. Simulate multiple response vectors.
 #   6. Run the standard knockoff filter and the LASSO benchmark.
-#   7. Summarize selection metrics and produce the comparison figure.
+#   7. Summarize selection metrics.
 #
-# Notes:
-#   - The derandomized knockoff/e-value workflow is intentionally not included.
-#   - Exploratory LD diagnostics and Ridge-based importance plots are intentionally
-#     not included.
-#   - Set ld_scenario to one of: "low_ld", "moderate_ld", or "high_ld".
+# Notes: set ld_scenario to one of: "low_ld", "moderate_ld", or "high_ld".
 # ================================================================================
 
 

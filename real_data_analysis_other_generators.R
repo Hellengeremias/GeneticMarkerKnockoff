@@ -363,7 +363,7 @@ estimate_empirical_markov_probabilities <- function(X) {
           # first original variable
           x_d <- X[i, j + 1]
           conj <- sum(X[, j] == x_o & X[, j + 1] == x_d) # P(Xd = x_d, Xf = x_o)
-          marg <- sum(X[, j + 1] == x_d)                 # P(Xd = x_d)
+          marg <- sum(X[, j + 1] == x_o)                 # P(Xd = x_o)
           probs[v] <- ifelse(marg > 0, conj / marg, 0)
           
         } else if (j == p) {
